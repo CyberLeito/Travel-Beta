@@ -19,9 +19,9 @@ namespace Travel_Beta.Models
        // public int OrganizationId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public DateTime BirthDate { get; set; }
 
-
-
+        
 
         public ClaimsIdentity GenerateUserIdentity(ApplicationUserManager manager)
         {

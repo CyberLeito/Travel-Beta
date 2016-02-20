@@ -7,9 +7,31 @@
     </p>
 
     <div class="form-horizontal">
-        <h4>Create a new account</h4>
+        <h4>Signup for a new TropicaTravel Account</h4>
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
+
+         <%--'-------------------%>
+        <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="FirstName" CssClass="col-md-2 control-label">First name</asp:Label>
+            <div class="col-md-10">
+                <asp:TextBox runat="server" ID="FirstName"  CssClass="form-control" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="FirstName"
+                    CssClass="text-danger" ErrorMessage="First name is required." />
+            </div>
+        </div>
+                <%--'-------------------%>
+         <%--'-------------------%>
+        <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="LastName" CssClass="col-md-2 control-label">Last name</asp:Label>
+            <div class="col-md-10">
+                <asp:TextBox runat="server" ID="LastName" TextMode="singleline" CssClass="form-control" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="LastName"
+                    CssClass="text-danger" ErrorMessage="Last name is required." />
+            </div>
+        </div>
+                <%--'-------------------%>
+        
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Email</asp:Label>
             <div class="col-md-10">
@@ -18,6 +40,19 @@
                     CssClass="text-danger" ErrorMessage="The email field is required." />
             </div>
         </div>
+          <%--'-------------------%>
+        <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="PhoneNumber" CssClass="col-md-2 control-label">Phone number</asp:Label>
+            <div class="col-md-10">
+                <asp:TextBox runat="server" ID="PhoneNumber" TextMode="singleline" CssClass="form-control" />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" 
+                    ErrorMessage="Enter valid Phone number" ControlToValidate="PhoneNumber" CssClass="text-danger" Display="Dynamic"
+                    ValidationExpression="^[01]?[- .]?(\([2-9]\d{2}\)|[2-9]\d{2})[- .]?\d{3}[- .]?\d{4}$" ></asp:RegularExpressionValidator> 
+                 <asp:RequiredFieldValidator runat="server" ControlToValidate="PhoneNumber"
+                    CssClass="text-danger" Display="Dynamic" ErrorMessage="Phone number is required." />
+            </div>
+        </div>
+                <%--'-------------------%>
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label">Password</asp:Label>
             <div class="col-md-10">
@@ -40,7 +75,7 @@
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="BirthDate" CssClass="col-md-2 control-label">Date of Birth</asp:Label>
             <div class="col-md-10">
-                <asp:TextBox runat="server" ID="TextBox3" TextMode="Date" CssClass="form-control" />
+                <asp:TextBox runat="server" ID="BirthDate" TextMode="Date" CssClass="form-control" Width="280px" Wrap="False" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="BirthDate"
                     CssClass="text-danger" ErrorMessage="The date of birth is required." />
             </div>

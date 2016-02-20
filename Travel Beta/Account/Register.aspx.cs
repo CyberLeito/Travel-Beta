@@ -15,7 +15,7 @@ namespace Travel_Beta.Account
         {
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var signInManager = Context.GetOwinContext().Get<ApplicationSignInManager>();
-            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text };
+            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text,  BirthDate = Convert.ToDateTime(BirthDate.Text), FirstName = FirstName.Text, LastName = LastName.Text, PhoneNumber = PhoneNumber.Text};
             IdentityResult result = manager.Create(user, Password.Text);
             if (result.Succeeded)
             {

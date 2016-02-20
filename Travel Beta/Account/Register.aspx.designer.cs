@@ -22,6 +22,24 @@ namespace Travel_Beta.Account {
         protected global::System.Web.UI.WebControls.Literal ErrorMessage;
         
         /// <summary>
+        /// FirstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox FirstName;
+        
+        /// <summary>
+        /// LastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox LastName;
+        
+        /// <summary>
         /// Email control.
         /// </summary>
         /// <remarks>
@@ -29,6 +47,24 @@ namespace Travel_Beta.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Email;
+        
+        /// <summary>
+        /// PhoneNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox PhoneNumber;
+        
+        /// <summary>
+        /// RegularExpressionValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
         
         /// <summary>
         /// Password control.
@@ -49,12 +85,12 @@ namespace Travel_Beta.Account {
         protected global::System.Web.UI.WebControls.TextBox ConfirmPassword;
         
         /// <summary>
-        /// TextBox3 control.
+        /// BirthDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox BirthDate;
     }
 }
