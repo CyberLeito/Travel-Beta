@@ -64,4 +64,4 @@
     <p></p>
     <asp:Button ID="RemoveProductButton" runat="server" Text="Remove Product" OnClick="RemoveProductButton_Click" CausesValidation="false"/>
     <asp:Label ID="LabelRemoveStatus" runat="server" Text=""></asp:Label>
-</asp:Content>
+<asp:Content>
