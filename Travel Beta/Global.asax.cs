@@ -7,8 +7,10 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using Travel_Beta.Logic;
 
 namespace Travel_Beta
+
 {
     public class Global : HttpApplication
     {
@@ -18,6 +20,12 @@ namespace Travel_Beta
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+
+            // Create the custom role and user.
+            RoleActions roleActions = new RoleActions();
+            roleActions.AddUserAndRole();
+
         }
     }
 }
