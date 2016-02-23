@@ -1,0 +1,13 @@
+﻿.jumbotron{
+   z-index:10;
+   color:antiquewhite;
+   margin-top:9px;
+   margin-left:40px; 
+   position:fixed;
+}
+
+.containerX2{
+    margin-top : 400px;
+
+
+}

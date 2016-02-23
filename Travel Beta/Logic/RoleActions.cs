@@ -15,7 +15,7 @@ namespace Travel_Beta.Logic
             // Access the application context and create result variables.
             Models.ApplicationDbContext context = new ApplicationDbContext();
             IdentityResult IdRoleResult;
-            IdentityResult IdUserResult;
+            //IdentityResult IdUserResult;------
 
             // Create a RoleStore object by using the ApplicationDbContext object. 
             // The RoleStore is only allowed to contain IdentityRole objects.
@@ -36,20 +36,24 @@ namespace Travel_Beta.Logic
             // object. Note that you can create new objects and use them as parameters in
             // a single line of code, rather than using multiple lines of code, as you did
             // for the RoleManager object.
-            var userMgr = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
-            var appUser = new ApplicationUser
-            {
-                UserName = "admin@tropica.com",
-                Email = "admin@tropica.com"
-            };
-            IdUserResult = userMgr.Create(appUser, "Admin123");
+
+            //--------------------------------------------------------------------------------------
+            //var userMgr = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+            //var appUser = new ApplicationUser
+            //{
+            //    UserName = "admin@tropica.com",
+            //    Email = "admin@tropica.com"
+            //};
+            //IdUserResult = userMgr.Create(appUser, "Admin123");
+            ////--------------------------------------------------------------------------------------
 
             // If the new "canEdit" user was successfully created, 
             // add the "canEdit" user to the "canEdit" role. 
-            if (!userMgr.IsInRole(userMgr.FindByEmail("admin@tropica.com").Id, "AdminUsr"))
-            {
-                IdUserResult = userMgr.AddToRole(userMgr.FindByEmail("admin@tropica.com").Id, "AdminUsr");
-            }
+            //------------------------------------------------------------------------------------------
+            //if (!userMgr.IsInRole(userMgr.FindByEmail("admin@tropica.com").Id, "AdminUsr"))
+            //{
+            //    IdUserResult = userMgr.AddToRole(userMgr.FindByEmail("admin@tropica.com").Id, "AdminUsr");
+            //}
         }
     }
 }

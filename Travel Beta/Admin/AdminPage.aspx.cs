@@ -115,4 +115,3 @@ namespace Travel_Beta.Admin
         }
     }
 }
-}
