@@ -46,8 +46,8 @@
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="PhoneNumber" TextMode="singleline" CssClass="form-control" />
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" 
-                    ErrorMessage="Enter valid Phone number" ControlToValidate="PhoneNumber" CssClass="text-danger" Display="Dynamic"
-                    ValidationExpression="^[01]?[- .]?(\([2-9]\d{2}\)|[2-9]\d{2})[- .]?\d{3}[- .]?\d{4}$" ></asp:RegularExpressionValidator> 
+                    ErrorMessage="Enter valid Phone number! Eg; '601234567890'" ControlToValidate="PhoneNumber" CssClass="text-danger" Display="Dynamic"
+                    ValidationExpression="\d{11}" ></asp:RegularExpressionValidator> 
                  <asp:RequiredFieldValidator runat="server" ControlToValidate="PhoneNumber"
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="Phone number is required." />
             </div>

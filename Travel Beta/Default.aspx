@@ -16,6 +16,23 @@
                 <%--<asp:Image ID="Image1" runat="server" HorizontalAlign="Center" width="100%" ImageUrl="http://www.millenniumhotels.com/content/dam/global/en/grand-millennium-kuala-lumpur/images/KL-Skyline_Night_HDR.JPG"/>--%>
             </p>
             <p>
+                 <%-----------------%>
+        <div id="CategoryMenu" class = "products" style="text-align: center">       
+            <asp:ListView ID="categoryList"  
+                ItemType="Travel_Beta.Models.Category" 
+                runat="server"
+                SelectMethod="GetCategories" >
+                <ItemTemplate>
+                    <b style="font-size: large; font-style: normal">
+                        <a href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
+                        <%#: Item.CategoryName %>
+                        </a>
+                    </b>
+                </ItemTemplate>
+                <ItemSeparatorTemplate>  |  </ItemSeparatorTemplate>
+            </asp:ListView>
+        </div>
+    <%-----------------%>
                 <br />
                 &nbsp;</p>
         </div>

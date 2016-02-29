@@ -6,8 +6,16 @@
    position:fixed;
 }
 
+
+
 .containerX2{
     margin-top : 400px;
+}
 
+
+.products{
+    margin-top: 400px;
+    position: fixed;
+    z-index:11;
 
 }

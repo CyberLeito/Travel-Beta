@@ -14,9 +14,7 @@ namespace Travel_Beta.Models
     //public class ApplicationUser : IdentityUser
      public class ApplicationUser : IdentityUser
     {
-
-       // public string Description { get; set; }
-       // public int OrganizationId { get; set; }
+        
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }

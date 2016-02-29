@@ -8,6 +8,9 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 using Travel_Beta.Logic;
+using System.Data.Entity;
+using Travel_Beta.Models;
+
 
 namespace Travel_Beta
 
@@ -25,6 +28,10 @@ namespace Travel_Beta
             // Create the custom role and user.
             RoleActions roleActions = new RoleActions();
             roleActions.AddUserAndRole();
+
+            
+            // Initialize the product database.
+            Database.SetInitializer(new ProductDatabaseInitializer());
 
         }
     }

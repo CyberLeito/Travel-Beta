@@ -7,6 +7,9 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
+using Travel_Beta.Models;
+using System.Linq;
+
 
 namespace Travel_Beta
 {
@@ -74,6 +77,8 @@ namespace Travel_Beta
                 adminLink.Visible = true;
             }
         }
+
+      
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
