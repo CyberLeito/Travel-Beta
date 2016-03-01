@@ -6,7 +6,9 @@
    position:fixed;
 }
 
-
+.droprs1{
+    max-width: 280px;
+}
 
 .containerX2{
     margin-top : 400px;
