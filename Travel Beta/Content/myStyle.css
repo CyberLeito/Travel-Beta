@@ -1,6 +1,6 @@
 ﻿.jumbotron{
    z-index:10;
-   color:antiquewhite;
+   color:white;
    margin-top:9px;
    margin-left:40px; 
    position:fixed;
@@ -19,5 +19,11 @@
     margin-top: 400px;
     position: fixed;
     z-index:11;
+
+}
+
+.BoobBtn{
+    margin-top: 500px;
+    margin-left:  300px;
 
 }

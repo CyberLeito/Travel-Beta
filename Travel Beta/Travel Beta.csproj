@@ -453,6 +453,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Catalog\Images\Thumbs\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>
