@@ -8,6 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using Travel_Beta.Models;
+using Travel_Beta.Logic;
 using System.Linq;
 
 
@@ -78,7 +79,22 @@ namespace Travel_Beta
             }
         }
 
-      
+        protected void Page_PreRender(object sender, EventArgs e)
+        {
+            using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
+            {
+                string cartStr = string.Format("Cart ({0})", usersShoppingCart.GetCount());
+                cartCount.InnerText = cartStr;
+            }
+        }
+
+        public IQueryable<Category> GetCategories()
+        {
+            var _db = new Travel_Beta.Models.ProductContext();
+            IQueryable<Category> query = _db.Categories;
+            return query;
+        }
+
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
