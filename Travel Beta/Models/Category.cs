@@ -16,6 +16,7 @@ namespace Travel_Beta.Models
         public string CategoryName { get; set; }
 
         [Display(Name = "Product Description")]
+        //[Display(Name = "Shoe Size")]
         public string Description { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }

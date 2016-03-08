@@ -20,14 +20,64 @@ namespace Travel_Beta.Models
                 new Category
                 {
                     CategoryID = 1,
-                    CategoryName = "1st Class"
+                    CategoryName = "35"
                 },
                 new Category
                 {
                     CategoryID = 2,
-                    CategoryName = "Budget"
+                    CategoryName = "35.5"
+                },
+                new Category
+                {
+                    CategoryID = 1,
+                    CategoryName = "36"
+                },
+                new Category
+                {
+                    CategoryID = 2,
+                    CategoryName = "36.5"
+                },
+                new Category
+                {
+                    CategoryID = 1,
+                    CategoryName = "37"
+                },
+                new Category
+                {
+                    CategoryID = 2,
+                    CategoryName = "37.5"
+                },
+                //
+                 new Category
+                {
+                    CategoryID = 1,
+                    CategoryName = "38"
+                },
+                new Category
+                {
+                    CategoryID = 2,
+                    CategoryName = "38.5"
+                },
+                new Category
+                {
+                    CategoryID = 1,
+                    CategoryName = "40"
+                },
+                new Category
+                {
+                    CategoryID = 2,
+                    CategoryName = "40.5"
+                },
+                new Category
+                {
+                    CategoryID = 1,
+                    CategoryName = "41"
+                },
+                new Category
+                {
+                    CategoryID = 2,
+                    CategoryName = "42"
                 }
-                
             };
 
             return categories;
