@@ -20,10 +20,7 @@ namespace Travel_Beta.Models
         public int ProductId { get; set; }
 
         public virtual Product Product { get; set; }
-
-        //public System.DateTime CheckInDate { get; set; }
         
-        //public System.DateTime CheckOutDate { get; set; }
 
     }
 }
