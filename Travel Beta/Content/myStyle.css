@@ -5,6 +5,11 @@
    margin-left:40px; 
    position:fixed;
 }
+.size-list{
+    margin-top: -50px;
+    position: fixed;
+    /*z-index: -1;*/
+}
 
 .droprs1{
     max-width: 280px;

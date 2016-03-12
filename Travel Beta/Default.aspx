@@ -3,7 +3,9 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="bg">
-        <img src="Content/KL-Skyline_Night_HDR.JPG" width="100%" height="350px"/>
+        <%--<img src="Content/KL-Skyline_Night_HDR.JPG" width="100%" height="350px"/>--%>
+        <img src="Content/ShoeRadioactive.jpg" width="100%" height="350px"/>
+
     </div>
     <div class="jumbotron">
         <h1>Tropica Travels</h1>
@@ -11,13 +13,14 @@
     </div>
 
     <div class="row">
-        <div class="col-md-4" >
-            <p>
+        <div class="size-list" >
+            
                 <%--<asp:Image ID="Image1" runat="server" HorizontalAlign="Center" width="100%" ImageUrl="http://www.millenniumhotels.com/content/dam/global/en/grand-millennium-kuala-lumpur/images/KL-Skyline_Night_HDR.JPG"/>--%>
-            </p>
-            <p>
+            
                  <%-----------------%>
-        <div id="CategoryMenu" class = "products" style="text-align: center">       
+                
+        <div id="CategoryMenu" class = "products" style="text-align: center">  
+            <h3>Select your size from below</h3>     
             <asp:ListView ID="categoryList"  
                 ItemType="Travel_Beta.Models.Category" 
                 runat="server"
@@ -34,8 +37,7 @@
         </div>
     <%-----------------%>
                 <br />
-                &nbsp;</p>
-        </div>
+          </div>
     </div>
 
 </asp:Content>

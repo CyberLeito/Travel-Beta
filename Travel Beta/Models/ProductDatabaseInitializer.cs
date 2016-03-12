@@ -20,62 +20,62 @@ namespace Travel_Beta.Models
                 new Category
                 {
                     CategoryID = 1,
-                    CategoryName = "35"
+                    CategoryName = "Size 35"
                 },
                 new Category
                 {
                     CategoryID = 2,
-                    CategoryName = "35.5"
+                    CategoryName = "Size 35.5"
                 },
                 new Category
                 {
-                    CategoryID = 1,
+                    CategoryID = 3,
                     CategoryName = "36"
                 },
                 new Category
                 {
-                    CategoryID = 2,
+                    CategoryID = 4,
                     CategoryName = "36.5"
                 },
                 new Category
                 {
-                    CategoryID = 1,
+                    CategoryID = 5,
                     CategoryName = "37"
                 },
                 new Category
                 {
-                    CategoryID = 2,
+                    CategoryID = 6,
                     CategoryName = "37.5"
                 },
                 //
                  new Category
                 {
-                    CategoryID = 1,
+                    CategoryID = 7,
                     CategoryName = "38"
                 },
                 new Category
                 {
-                    CategoryID = 2,
+                    CategoryID = 8,
                     CategoryName = "38.5"
                 },
                 new Category
                 {
-                    CategoryID = 1,
+                    CategoryID = 9,
                     CategoryName = "40"
                 },
                 new Category
                 {
-                    CategoryID = 2,
+                    CategoryID = 10,
                     CategoryName = "40.5"
                 },
                 new Category
                 {
-                    CategoryID = 1,
+                    CategoryID = 11,
                     CategoryName = "41"
                 },
                 new Category
                 {
-                    CategoryID = 2,
+                    CategoryID = 12,
                     CategoryName = "42"
                 }
             };

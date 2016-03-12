@@ -14,13 +14,12 @@ namespace Travel_Beta.Models
     //public class ApplicationUser : IdentityUser
      public class ApplicationUser : IdentityUser
     {
-        
+    
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
 
         
-
         public ClaimsIdentity GenerateUserIdentity(ApplicationUserManager manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
