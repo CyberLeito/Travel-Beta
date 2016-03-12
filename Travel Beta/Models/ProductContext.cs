@@ -17,6 +17,7 @@ namespace Travel_Beta.Models
         public DbSet<CartItem> ShoppingCartItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<FeedbackModel> Feedback { get; set; }
 
     }
 }
