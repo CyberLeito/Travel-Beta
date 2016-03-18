@@ -8,6 +8,7 @@ namespace Travel_Beta.Models
 {
     public class FeedbackModel
     {
+        [Key]
         [ScaffoldColumn(false)]
         public int FeedbackID { get; set; }
 

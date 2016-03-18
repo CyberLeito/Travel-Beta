@@ -9,8 +9,9 @@
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Text="* Feedback cannot be empty." ControlToValidate="AddProductDescription" SetFocusOnError="true" Display="Dynamic"></asp:RequiredFieldValidator>
            </div>
          <div class="col-md-offset-2 col-md-10">
-    <asp:Button ID="SubmitFeedbackButton" runat="server" Text="Submit Feedback" CssClass="btn btn-primary" OnClick="AddProductButton_Click"  CausesValidation="true"/>
+    <asp:Button ID="SubmitFeedbackButton" runat="server" Text="Submit Feedback" CssClass="btn btn-primary" OnClick="Submit_feedback_ButtonClick"  CausesValidation="true"/>
     </div>
         <asp:Label ID="LabelAddStatus" runat="server" Text=""></asp:Label>
     </div>
 </asp:Content>
+ 

@@ -13,7 +13,6 @@ namespace Travel_Beta
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void Submit_feedback_ButtonClick(object sender, EventArgs e)
