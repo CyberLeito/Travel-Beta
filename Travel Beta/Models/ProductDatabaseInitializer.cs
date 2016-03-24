@@ -20,63 +20,22 @@ namespace Travel_Beta.Models
                 new Category
                 {
                     CategoryID = 1,
-                    CategoryName = "Size 35"
+                    CategoryName = "Men's Shoes"
                 },
                 new Category
                 {
                     CategoryID = 2,
-                    CategoryName = "Size 35.5"
+                    CategoryName = "Men's Bags"
                 },
                 new Category
                 {
                     CategoryID = 3,
-                    CategoryName = "36"
+                    CategoryName = "Women's Shoes"
                 },
                 new Category
                 {
                     CategoryID = 4,
-                    CategoryName = "36.5"
-                },
-                new Category
-                {
-                    CategoryID = 5,
-                    CategoryName = "37"
-                },
-                new Category
-                {
-                    CategoryID = 6,
-                    CategoryName = "37.5"
-                },
-                //
-                 new Category
-                {
-                    CategoryID = 7,
-                    CategoryName = "38"
-                },
-                new Category
-                {
-                    CategoryID = 8,
-                    CategoryName = "38.5"
-                },
-                new Category
-                {
-                    CategoryID = 9,
-                    CategoryName = "40"
-                },
-                new Category
-                {
-                    CategoryID = 10,
-                    CategoryName = "40.5"
-                },
-                new Category
-                {
-                    CategoryID = 11,
-                    CategoryName = "41"
-                },
-                new Category
-                {
-                    CategoryID = 12,
-                    CategoryName = "42"
+                    CategoryName = "Women's Bags"
                 }
             };
 
@@ -90,8 +49,7 @@ namespace Travel_Beta.Models
                 {
                     ProductID = 1,
                     ProductName = "Penang Explore 1st class",
-                    Description = "Yet to describe" +
-                                  "yeah!",
+                    Description = "Nodesc",
                     ImagePath="penang.png",
                     UnitPrice = 220.00,
                     CategoryID = 1

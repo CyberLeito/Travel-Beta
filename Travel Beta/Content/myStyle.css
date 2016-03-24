@@ -14,17 +14,25 @@
 .droprs1{
     max-width: 280px;
 }
+.LisProd{
+    position: fixed;
+    height: 20px;
+}
 
 .containerX2{
     margin-top : 400px;
 }
 
+.category{
+    margin-top: 20px;
+    position: center;
+    z-index:11;
+}
 
 .products{
     margin-top: 400px;
     position: fixed;
     z-index:11;
-
 }
 
 .BoobBtn{

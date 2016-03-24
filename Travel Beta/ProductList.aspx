@@ -1,7 +1,27 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductList.aspx.cs" Inherits="Travel_Beta.ProductList" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    <%-----------------%>
+                
+        <div id="CategoryMenu" class = "category" style="text-align: center">  
+            <%--<h3>Select your size from below</h3>--%>     
+            <asp:ListView ID="categoryList"  
+                ItemType="Travel_Beta.Models.Category" 
+                runat="server"
+                SelectMethod="GetCategories" >
+                <ItemTemplate>
+                    <b style="font-size: large; font-style: normal">
+                        <a href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
+                        <%#: Item.CategoryName %>
+                        </a>
+                    </b>
+                </ItemTemplate>
+                <ItemSeparatorTemplate>  _______  </ItemSeparatorTemplate>
+            </asp:ListView>
+        </div>
+    <%-----------------%>
 
+    <div>
             <asp:ListView ID="productList" runat="server" 
                 DataKeyNames="ProductID" GroupItemCount="4"
                 ItemType="Travel_Beta.Models.Product" SelectMethod="GetProducts">
@@ -76,5 +96,6 @@
                     </table>
                 </LayoutTemplate>
             </asp:ListView>
+        </div>
           
 </asp:Content>

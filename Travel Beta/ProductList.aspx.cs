@@ -28,5 +28,11 @@ namespace Travel_Beta
             }
             return query;
         }
+        public IQueryable<Category> GetCategories()
+        {
+            var _db = new Travel_Beta.Models.ProductContext();
+            IQueryable<Category> query = _db.Categories;
+            return query;
+        }
     }
 }
