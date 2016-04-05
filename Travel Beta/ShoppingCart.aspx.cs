@@ -9,13 +9,64 @@ using Travel_Beta.Logic;
 using System.Collections.Specialized;
 using System.Collections;
 using System.Web.ModelBinding;
+using System.Data.OleDb;
+using System.Configuration;
+using System.Data;
+using Microsoft.AspNet.Identity;
+
 
 namespace Travel_Beta
 {
     public partial class ShoppingCart : System.Web.UI.Page
     {
+
+        protected void BindUserDetails()
+        {
+            OleDbConnection con = new OleDbConnection();
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["AccessDB"].ToString();
+            OleDbCommand cmd = new OleDbCommand();
+            DataSet ds = new DataSet();
+            cmd.CommandText = "SELECT * From Addresses where UserID = '" + Context.User.Identity.GetUserId() + "'";
+            cmd.Connection = con;
+            OleDbDataAdapter Da = new OleDbDataAdapter(cmd);
+            Da.Fill(ds);
+
+            if (ds.Tables.Count > 0)   //check for NOT empty..err..return from access query
+            {
+                for (int i = 0; i < ds.Tables.Count; i++)
+                {
+                    if (ds.Tables[i].Rows.Count > 0)
+                    {
+                        // do your job
+                        gxDetails.DataSource = ds;
+                        gxDetails.DataBind();
+                    }
+                    else
+                    {
+                        // check1.Text = "NO rows int htekjsd";
+                        SetAddrr.Visible = true;
+
+                    }
+                }
+            }// end of NOT Empty query check
+
+
+            //  gvDetails.UseAccessibleHeader = true;
+            // gvDetails.HeaderRow.TableSection = TableRowSection.TableHeader;
+        }
+
+
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            bool loggedIn = (System.Web.HttpContext.Current.User != null) && System.Web.HttpContext.Current.User.Identity.IsAuthenticated;
+
+            if(loggedIn == false)
+            {
+                Response.Redirect("~/Account/Login");
+            }
+
             using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
             {
                 decimal cartTotal = 0;
@@ -31,9 +82,13 @@ namespace Travel_Beta
                     lblTotal.Text = "";
                     ShoppingCartTitle.InnerText = "Shopping Cart is Empty";
                     UpdateBtn.Visible = false;
-                    CheckoutImageBtn.Visible = false;
+                    CheckoutImageBtn.Visible = false; //paypal checkout button
+                    ImageButton2.Visible = false; //visa checkout button
+                    SetAddrr.Visible = false;
                 }
             }
+
+            BindUserDetails();
         }
 
         public List<CartItem> GetShoppingCartItems()
@@ -96,5 +151,48 @@ namespace Travel_Beta
             }
             Response.Redirect("Checkout/CheckoutStart.aspx");
         }
+
+
+        protected void CheckoutBtn_Click2(object sender, ImageClickEventArgs e)
+        {
+           Response.Redirect("Checkout/VisaPayStart.aspx");
+        }
+
+        //=============================================================================================================
+        //=============================================================================================================
+        //=============================================================================================================
+        //=============================================================================================================
+       
+
+
+
+        protected void AddressFill(object sender, EventArgs e)
+        {
+            string usrID = Context.User.Identity.GetUserId();
+            
+            OleDbConnection Conn = new OleDbConnection();
+            Conn.ConnectionString = ConfigurationManager.ConnectionStrings["AccessDB"].ToString();
+            Conn.Open();
+            OleDbCommand cmd = new OleDbCommand();
+            
+            cmd.CommandText = "insert into Addresses(Country,ContactName,StreetAddress,City,State,UserID) values('" + country.Text + "','" + Cname.Text + "','" + streetAddress.Text + "','" + city.Text + "','" + Xstate.Text + "','"+ usrID +"')";
+            cmd.Connection = Conn;
+            int a = cmd.ExecuteNonQuery();
+            //-----------------------POP_SUCCSS-------------------------------------------------
+            string message = "Address Added Successfully";
+            string url = "../";
+            string script = "window.onload = function(){ alert('";
+            script += message;
+            script += "');";
+            script += "window.location = '";
+            script += url;
+            script += "'; }";
+            ClientScript.RegisterStartupScript(this.GetType(), "Redirect", script, true);
+            //------------------------------------------------------------------------------------
+
+        }
+
+
+
     }
 }

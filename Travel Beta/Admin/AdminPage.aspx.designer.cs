@@ -13,6 +13,24 @@ namespace Travel_Beta.Admin {
     public partial class AdminPage {
         
         /// <summary>
+        /// FeedbackRedir control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button FeedbackRedir;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
         /// LabelAddCategory control.
         /// </summary>
         /// <remarks>
@@ -164,6 +182,15 @@ namespace Travel_Beta.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelAddStatus;
+        
+        /// <summary>
+        /// LabelAccessDBStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelAccessDBStatus;
         
         /// <summary>
         /// LabelRemoveProduct control.
