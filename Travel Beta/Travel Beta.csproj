@@ -43,10 +43,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="JetEntityFrameworkProvider, Version=1.1.1.0, Culture=neutral, PublicKeyToken=756cf6beb8fe7b41, processorArchitecture=MSIL">
-      <HintPath>..\packages\JetEntityFrameworkProvider.1.1.2\lib\JetEntityFrameworkProvider.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -180,7 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="AccessFeedback.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -198,13 +193,15 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
-    <Content Include="Admin\ViewFeedback.aspx" />
+    <Content Include="App_Data\TravelBase3.mdf" />
+    <Content Include="App_Data\TravelBase3_log.ldf">
+      <DependentUpon>TravelBase3.mdf</DependentUpon>
+    </Content>
     <Content Include="Checkout\CheckoutCancel.aspx" />
     <Content Include="Checkout\CheckoutComplete.aspx" />
     <Content Include="Checkout\CheckoutError.aspx" />
     <Content Include="Checkout\CheckoutReview.aspx" />
     <Content Include="Checkout\CheckoutStart.aspx" />
-    <Content Include="Checkout\VisaPayStart.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-Original.css" />
     <Content Include="Content\bootstrap.css" />
@@ -223,7 +220,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Checkout\Web.config" />
-    <Content Include="WebForm1.aspx" />
     <None Include="Properties\PublishProfiles\TravelBeta20160220013303.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -284,13 +280,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessFeedback.aspx.cs">
-      <DependentUpon>AccessFeedback.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AccessFeedback.aspx.designer.cs">
-      <DependentUpon>AccessFeedback.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Account\AddPhoneNumber.aspx.cs">
       <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -410,13 +399,6 @@
     <Compile Include="Admin\AdminPage.aspx.designer.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ViewFeedback.aspx.cs">
-      <DependentUpon>ViewFeedback.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\ViewFeedback.aspx.designer.cs">
-      <DependentUpon>ViewFeedback.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -462,13 +444,6 @@
     </Compile>
     <Compile Include="Checkout\CheckoutStart.aspx.designer.cs">
       <DependentUpon>CheckoutStart.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Checkout\VisaPayStart.aspx.cs">
-      <DependentUpon>VisaPayStart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Checkout\VisaPayStart.aspx.designer.cs">
-      <DependentUpon>VisaPayStart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -557,16 +532,8 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Catalog\Images\Thumbs\" />
     <Folder Include="Controllers\" />
   </ItemGroup>

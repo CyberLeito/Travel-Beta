@@ -72,8 +72,8 @@ namespace Travel_Beta.Logic
             ////--------------------------------------------------------------------------------------
 
             var user = new ApplicationUser();
-            user.UserName = "admin@sanantonio.com";
-            user.Email = "admin@sanantonio.com";
+            user.UserName = "admin@tropica.com";
+            user.Email = "admin@tropica.com";
             user.FirstName = "Jhonny";
             user.LastName = "Bravo";
             user.BirthDate = new DateTime(1975, 5, 15);

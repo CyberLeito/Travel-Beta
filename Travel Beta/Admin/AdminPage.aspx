@@ -4,17 +4,6 @@
     <h1>Administration</h1>
     <hr />
     <h3>Add Product</h3>
-
-    
-    <div class="col-sm-8"></div> 
-    <div class="col-sm-4">
-        <asp:Button ID="FeedbackRedir" runat="server" Text="View Customer Feedback" CssClass="btn btn-default" OnClick="GoToFeedback" CausesValidation="false"/>
-        <asp:Button ID="Button1" runat="server" Text="Test PopUP" CssClass="btn btn-default" OnClick="popupTest" CausesValidation="false"/>
-    
-    </div>
-
-
-
     <br />
         <div class="form-group">
             <asp:Label ID="LabelAddCategory" runat="server" CssClass="col-md-2 control-label">Category:</asp:Label></>
@@ -60,7 +49,6 @@
     <asp:Button ID="AddProductButton" runat="server" Text="Add Product" CssClass="btn btn-primary" OnClick="AddProductButton_Click"  CausesValidation="true"/>
     </div>
          <asp:Label ID="LabelAddStatus" runat="server" Text=""></asp:Label>
-         <asp:Label ID="LabelAccessDBStatus" runat="server" Text=""></asp:Label>
     <p></p>
     <br />
     <br />
@@ -83,7 +71,4 @@
     <asp:Button ID="RemoveProductButton" runat="server" Text="Remove Product" CssClass="btn btn-primary" OnClick="RemoveProductButton_Click" CausesValidation="false"/>
     </div>
          <asp:Label ID="LabelRemoveStatus" runat="server" Text=""></asp:Label>
-
-       
-
 </asp:Content>
