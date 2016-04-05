@@ -27,6 +27,8 @@
                 </ItemTemplate>        
         </asp:TemplateField>    
         </Columns>    
+
+
     </asp:GridView>
     <div>
         <p></p>
@@ -58,123 +60,8 @@
     </tr>
     </table>
 
-    <div class="col-sm-8"></div> 
-    <div class="col-sm-4">
+
      <h4>Shipping Address</h4>
          
-
-
-       <asp:FormView ID="gxDetails"
-  RunAt="server">
-
-  <ItemTemplate>
-    <table>
-      <tr>
-        <td align="right"><b>Country: </b></td>       
-        <td><%# Eval("Country") %></td>
-      </tr>
-      <tr>
-        <td align="right"><b>Name: </b></td>     
-        <td><%# Eval("ContactName") %></td>
-      </tr>
-      <tr>
-        <td align="right"><b>Street Address: </b></td>      
-        <td><%# Eval("StreetAddress") %></td>
-      </tr>
-      <tr>
-        <td align="right"><b>City: </b></td>
-        <td><%# Eval("City") %></td>
-      </tr>
-      <tr>
-        <td align="right"><b>State: </b></td>       
-        <td><%# Eval("State") %></td>
-      </tr>
-    </table>                 
-  </ItemTemplate>                 
-</asp:FormView>
-
-
-
-
-
-
-       <%-- <asp:Label ID="check1" runat="server" />
-        <asp:Button type="button" runat="server" Text="CHECK" class="btn btn-default" onclick="BindUserDetails" CausesValidation="false" />
-       --%>    
-
-        <%--//////////////////////*************************////////////////////////--%>
-         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
-        <div id="contxx" class="container">
-  
-  <!-- Trigger the modal with a button -->
-            <div id="SetAddrr" runat="server">
-  <button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModal">Set Shipping address</button>
-            </div>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Shipping Address</h4>
-        </div>
-        <div class="modal-body">
-            <%--///////////////////////*************************////////////////////////--%>
-          <p>Enter your shipping address.</p>
-            <br />
-
-            <div class="form-group">
-            <asp:Label ID="lbl1" runat="server" CssClass="col-md-2 control-label">Country:</asp:Label>
-            <asp:TextBox ID="country" runat="server" CssClass="form-control"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="country" runat="server" Text="* Country required." SetFocusOnError="true" Display="Dynamic"></asp:RequiredFieldValidator>
-            </div>
-
-            <div class="form-group">
-            <asp:Label ID="Label1" runat="server" CssClass="col-md-2 control-label">Contact Name:</asp:Label>
-            <asp:TextBox ID="Cname" runat="server" CssClass="form-control"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Text="* Contact name required." ControlToValidate="Cname" SetFocusOnError="true" Display="Dynamic"></asp:RequiredFieldValidator>
-            </div>
-
-            <div class="form-group">
-            <asp:Label ID="Label2" runat="server" CssClass="col-md-2 control-label">Street Address:</asp:Label>
-            <asp:TextBox ID="streetAddress" runat="server" CssClass="form-control"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Text="* Street address required." ControlToValidate="streetAddress" SetFocusOnError="true" Display="Dynamic"></asp:RequiredFieldValidator>
-            </div>
-
-            <div class="form-group">
-            <asp:Label ID="Label3" runat="server" CssClass="col-md-2 control-label">City:</asp:Label>
-            <asp:TextBox ID="city" runat="server" CssClass="form-control"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="city" runat="server" Text="* Country required." SetFocusOnError="true" Display="Dynamic"></asp:RequiredFieldValidator>
-            </div>
-           
-            <div class="form-group">
-            <asp:Label ID="Label4" runat="server" CssClass="col-md-2 control-label">State:</asp:Label>
-            <asp:TextBox ID="Xstate" runat="server" CssClass="form-control"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ControlToValidate="Xstate" runat="server" Text="* Country required." SetFocusOnError="true" Display="Dynamic"></asp:RequiredFieldValidator>
-            </div>
-
-
-            <%--////////////////////////////////////////--%>
-        </div>
-        <div class="modal-footer">   
-          <asp:Button type="button" runat="server" Text="Submit" class="btn btn-default" onclick="AddressFill" CausesValidation="false" />
-           
-        </div>
-      </div>
-      
-    </div>
-  </div> 
- 
-</div>  <%--///////_EXIT MODAL_ POPUP    //////--%>
-
-      
-
-    </div>  <%--///////_RIGHT box div    //////--%>
     
     </asp:Content>
