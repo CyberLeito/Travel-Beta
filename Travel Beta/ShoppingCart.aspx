@@ -39,19 +39,19 @@
      <table> 
     <tr>
       <td>
-        <asp:Button ID="UpdateBtn" runat="server" Text="Update" OnClick="UpdateBtn_Click" />
+        <asp:Button ID="UpdateBtn" runat="server" Text="Update" OnClick="UpdateBtn_Click" CausesValidation="false" />
       </td>
       <td>
         <!--Checkout Placeholder -->
           <asp:ImageButton ID="CheckoutImageBtn" runat="server" 
                       ImageUrl="http://www.friendsofwcc.org/uploads/images/icons/dues-with-paypal.png" 
                       Width="145" AlternateText="Check out with PayPal" 
-                      OnClick="CheckoutBtn_Click" 
+                      OnClick="CheckoutBtn_Click" CausesValidation="false"
                       BackColor="Transparent" BorderWidth="0" />
           <asp:ImageButton ID="ImageButton2" runat="server" 
                       ImageUrl="http://promotions.newegg.com/nepro/15-5474/images/vcobtn.jpg" 
                       Width="145" AlternateText="Check out with PayPal" 
-                      OnClick="CheckoutBtn_Click2" 
+                      OnClick="CheckoutBtn_Click2" CausesValidation="false"
                       BackColor="Transparent" BorderWidth="0" />
                    
       </td>
@@ -163,7 +163,7 @@
             <%--////////////////////////////////////////--%>
         </div>
         <div class="modal-footer">   
-          <asp:Button type="button" runat="server" Text="Submit" class="btn btn-default" onclick="AddressFill" CausesValidation="false" />
+          <asp:Button type="button" runat="server" Text="Submit" class="btn btn-default" onclick="AddressFill" CausesValidation="True" />
            
         </div>
       </div>
