@@ -1,0 +1,18 @@
+Admin User: 
+admin@sanantonio.com
+
+Admin Password:
+SuperSecret@1
+                              
+
+Running the Website for 1st time might require an internet connection to download NuGet packages. Downloading process might take from 10 minutes to around 45 minutes depending on your connection. 
+
+Minimum Requirements:
+	
+	SQL Server 2014
+	Visual Studio 2015 Enterprise 
+	
+Accept the SSL certificate prompted on the 1st run.
+
+By default there are no products and they should be added manually
+                                           

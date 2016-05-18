@@ -1,0 +1,99 @@
+﻿.jumbotron{
+   z-index:10;
+   color:white;
+   margin-top:0px;
+   margin-left:40px; 
+   position:fixed;
+
+   
+}
+
+.nav{
+
+    font-size:large;
+}
+
+.AboutImg {
+    position: center;
+    display: block;
+    /*max-width:530px;*/
+    /*max-height:95px;*/
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.AboutImg2 {
+       margin-top:75px;
+
+    position: center;
+    /*display: block;*/
+    /*max-width:530px;*/
+    /*max-height:95px;*/
+    width: auto;
+    height: 290px;
+}
+
+.AboutImg3 {
+       margin-top:25px;
+
+    position: center;
+    display: block;
+    max-width:700px;
+    width: auto;
+    height: auto;
+}
+
+.AboutImg34 {
+       margin-top:25px;
+       margin-left:450px;
+    position: center;
+    display: block;
+    max-width:700px;
+    width: auto;
+    height: auto;
+}
+
+.Someii{
+    
+    margin-left:450px;
+
+
+}
+
+.size-list{
+    margin-top: -50px;
+    position: fixed;
+    /*z-index: -1;*/
+}
+
+.droprs1{
+    max-width: 280px;
+}
+.LisProd{
+    position: fixed;
+    height: 20px;
+}
+
+.containerX2{
+    margin-top : 400px;
+}
+
+.category{
+    margin-top: 20px;
+    position: center;
+    z-index:11;
+}
+
+.products{
+    margin-top: 400px;
+    position: fixed;
+    z-index:11;
+}
+
+.BoobBtn{
+    margin-top: 500px;
+    margin-left:  300px;
+
+}
